@@ -31,14 +31,23 @@
             label1 = new Label();
             radioButton1 = new RadioButton();
             radioButton2 = new RadioButton();
-            textBox1 = new TextBox();
-            textBox3 = new TextBox();
-            dateTimePicker1 = new DateTimePicker();
-            richTextBox1 = new RichTextBox();
+            NameTextBox = new TextBox();
+            BreedTextBox = new TextBox();
+            dateTimePicker = new DateTimePicker();
+            MedHistoryTextBox = new RichTextBox();
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
             label5 = new Label();
+            label6 = new Label();
+            WeightTextBox = new TextBox();
+            label7 = new Label();
+            ColorTextBox = new TextBox();
+            label8 = new Label();
+            ImageTextBox = new TextBox();
+            label9 = new Label();
+            FavToyTextBox = new TextBox();
+            button1 = new Button();
             SuspendLayout();
             // 
             // label1
@@ -75,35 +84,35 @@
             radioButton2.Text = "Dog";
             radioButton2.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // NameTextBox
             // 
-            textBox1.Location = new Point(131, 179);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(232, 27);
-            textBox1.TabIndex = 3;
-            textBox1.TextChanged += textBox1_TextChanged;
+            NameTextBox.Location = new Point(131, 179);
+            NameTextBox.Name = "NameTextBox";
+            NameTextBox.Size = new Size(232, 27);
+            NameTextBox.TabIndex = 3;
+            NameTextBox.TextChanged += textBox1_TextChanged;
             // 
-            // textBox3
+            // BreedTextBox
             // 
-            textBox3.Location = new Point(131, 271);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(232, 27);
-            textBox3.TabIndex = 5;
+            BreedTextBox.Location = new Point(131, 271);
+            BreedTextBox.Name = "BreedTextBox";
+            BreedTextBox.Size = new Size(232, 27);
+            BreedTextBox.TabIndex = 5;
             // 
-            // dateTimePicker1
+            // dateTimePicker
             // 
-            dateTimePicker1.Location = new Point(131, 224);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(232, 27);
-            dateTimePicker1.TabIndex = 6;
+            dateTimePicker.Location = new Point(131, 224);
+            dateTimePicker.Name = "dateTimePicker";
+            dateTimePicker.Size = new Size(232, 27);
+            dateTimePicker.TabIndex = 6;
             // 
-            // richTextBox1
+            // MedHistoryTextBox
             // 
-            richTextBox1.Location = new Point(131, 319);
-            richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(232, 93);
-            richTextBox1.TabIndex = 8;
-            richTextBox1.Text = "";
+            MedHistoryTextBox.Location = new Point(131, 319);
+            MedHistoryTextBox.Name = "MedHistoryTextBox";
+            MedHistoryTextBox.Size = new Size(232, 93);
+            MedHistoryTextBox.TabIndex = 8;
+            MedHistoryTextBox.Text = "";
             // 
             // label2
             // 
@@ -143,11 +152,93 @@
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label5.ForeColor = Color.White;
-            label5.Location = new Point(5, 319);
+            label5.Location = new Point(-2, 318);
             label5.Name = "label5";
-            label5.Size = new Size(124, 23);
+            label5.Size = new Size(131, 23);
             label5.TabIndex = 12;
-            label5.Text = "Medical Hitory:";
+            label5.Text = "Medical History:";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label6.ForeColor = Color.White;
+            label6.Location = new Point(392, 177);
+            label6.Name = "label6";
+            label6.Size = new Size(92, 31);
+            label6.TabIndex = 14;
+            label6.Text = "Weight:";
+            label6.Click += label6_Click;
+            // 
+            // WeightTextBox
+            // 
+            WeightTextBox.Location = new Point(483, 181);
+            WeightTextBox.Name = "WeightTextBox";
+            WeightTextBox.Size = new Size(232, 27);
+            WeightTextBox.TabIndex = 13;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label7.ForeColor = Color.White;
+            label7.Location = new Point(401, 220);
+            label7.Name = "label7";
+            label7.Size = new Size(73, 31);
+            label7.TabIndex = 16;
+            label7.Text = "Color:";
+            // 
+            // ColorTextBox
+            // 
+            ColorTextBox.Location = new Point(483, 224);
+            ColorTextBox.Name = "ColorTextBox";
+            ColorTextBox.Size = new Size(232, 27);
+            ColorTextBox.TabIndex = 15;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label8.ForeColor = Color.White;
+            label8.Location = new Point(401, 267);
+            label8.Name = "label8";
+            label8.Size = new Size(83, 31);
+            label8.TabIndex = 18;
+            label8.Text = "Image:";
+            // 
+            // ImageTextBox
+            // 
+            ImageTextBox.Location = new Point(483, 271);
+            ImageTextBox.Name = "ImageTextBox";
+            ImageTextBox.Size = new Size(232, 27);
+            ImageTextBox.TabIndex = 17;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label9.ForeColor = Color.White;
+            label9.Location = new Point(385, 318);
+            label9.Name = "label9";
+            label9.Size = new Size(99, 20);
+            label9.TabIndex = 20;
+            label9.Text = "Favourite Toy:";
+            // 
+            // FavToyTextBox
+            // 
+            FavToyTextBox.Location = new Point(483, 315);
+            FavToyTextBox.Name = "FavToyTextBox";
+            FavToyTextBox.Size = new Size(232, 27);
+            FavToyTextBox.TabIndex = 19;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(551, 374);
+            button1.Name = "button1";
+            button1.Size = new Size(124, 64);
+            button1.TabIndex = 21;
+            button1.Text = "button1";
+            button1.UseVisualStyleBackColor = true;
             // 
             // NewPet
             // 
@@ -155,19 +246,29 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LightGreen;
             ClientSize = new Size(832, 450);
+            Controls.Add(button1);
+            Controls.Add(label9);
+            Controls.Add(FavToyTextBox);
+            Controls.Add(label8);
+            Controls.Add(ImageTextBox);
+            Controls.Add(label7);
+            Controls.Add(ColorTextBox);
+            Controls.Add(label6);
+            Controls.Add(WeightTextBox);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
-            Controls.Add(richTextBox1);
-            Controls.Add(dateTimePicker1);
-            Controls.Add(textBox3);
-            Controls.Add(textBox1);
+            Controls.Add(MedHistoryTextBox);
+            Controls.Add(dateTimePicker);
+            Controls.Add(BreedTextBox);
+            Controls.Add(NameTextBox);
             Controls.Add(radioButton2);
             Controls.Add(radioButton1);
             Controls.Add(label1);
             Name = "NewPet";
             Text = "NewPet";
+            Load += NewPet_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -177,13 +278,22 @@
         private Label label1;
         private RadioButton radioButton1;
         private RadioButton radioButton2;
-        private TextBox textBox1;
-        private TextBox textBox3;
-        private DateTimePicker dateTimePicker1;
-        private RichTextBox richTextBox1;
+        private TextBox NameTextBox;
+        private TextBox BreedTextBox;
+        private DateTimePicker dateTimePicker;
+        private RichTextBox MedHistoryTextBox;
         private Label label2;
         private Label label3;
         private Label label4;
         private Label label5;
+        private Label label6;
+        private TextBox WeightTextBox;
+        private Label label7;
+        private TextBox ColorTextBox;
+        private Label label8;
+        private TextBox ImageTextBox;
+        private Label label9;
+        private TextBox FavToyTextBox;
+        private Button button1;
     }
 }
