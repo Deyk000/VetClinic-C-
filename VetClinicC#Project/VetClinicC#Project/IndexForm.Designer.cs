@@ -1,4 +1,6 @@
-﻿namespace VetClinicC_Project
+﻿using static VetClinicC_Project.IAnimal;
+
+namespace VetClinicC_Project
 {
     partial class IndexForm
     {
@@ -101,9 +103,9 @@
                 this.listViewIndexForm.Clear();
                 foreach (var pet in pets)
                 {
-                    this.listViewIndexForm.Items.Add(pet.Name, pet.GetType() == typeof(Cat) ? 0 : 1);
+                this.listViewIndexForm.Items.Add(pet.Name, pet is Cat ? 0 : 1);
                 }
-            }
+        }
     }
 }
 

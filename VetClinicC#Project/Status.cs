@@ -2,10 +2,12 @@ using System;
 
 namespace VetClinicC_Project
 {
-    
-    
+    public enum Status
+    {
+        Adopted,
+        NotAdopted
+    }
 
-    
     public interface IAnimal
     {
         string Name { get; set; }
@@ -18,21 +20,16 @@ namespace VetClinicC_Project
         Status Status { get; set; }
     }
 
-    
     public class Cat : IAnimal
     {
-        public Cat(string name, DateTime birthday, string breed,
-                   string medicalHistory, double weight, string color,
-                   string image, Status status, string favoriteToy)
+        public Cat(string name, DateTime birthday, string breed, string medicalHistory, double weight, string color, string favoriteToy)
         {
             Name = name;
             Birthday = birthday;
             Breed = breed;
             MedicalHistory = medicalHistory;
             Weight = weight;
-            Color = color;
-            Image = image;
-            Status = status;
+            Color = color;          
             FavoriteToy = favoriteToy;
         }
 
@@ -47,12 +44,9 @@ namespace VetClinicC_Project
         public string FavoriteToy { get; set; }
     }
 
-    
     public class Dog : IAnimal
     {
-        public Dog(string name, DateTime birthday, string breed,
-                   string medicalHistory, double weight, string color,
-                   string image, Status status, string favoriteToy)
+        public Dog(string name, DateTime birthday, string breed, string medicalHistory, double weight, string color, string favoriteToy)
         {
             Name = name;
             Birthday = birthday;
@@ -60,8 +54,6 @@ namespace VetClinicC_Project
             MedicalHistory = medicalHistory;
             Weight = weight;
             Color = color;
-            Image = image;
-            Status = status;
             FavoriteToy = favoriteToy;
         }
 
@@ -74,11 +66,5 @@ namespace VetClinicC_Project
         public string Image { get; set; }
         public Status Status { get; set; }
         public string FavoriteToy { get; set; }
-    }
-
-    public enum Status
-    {
-        Adopted,
-        NotAdopted
     }
 }
