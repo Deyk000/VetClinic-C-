@@ -2,15 +2,10 @@
 {
     partial class IndexForm
     {
-        /// <summary>
-        ///  Required designer variable.
-        /// </summary>
+
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        ///  Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -22,29 +17,30 @@
 
         #region Windows Form Designer generated code
 
-        /// <summary>
-        ///  Required method for Designer support - do not modify
-        ///  the contents of this method with the code editor.
-        /// </summary>
+
         private void InitializeComponent()
         {
+            Load += OnLoad;
+            ResumeLayout(false);
+            PerformLayout();
+
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(IndexForm));
-            listView1 = new ListView();
+            listViewIndexForm = new ListView();
             ImageListPet = new ImageList(components);
             VetClinicLabel = new Label();
             AddNewPetButton = new Button();
             SuspendLayout();
             // 
-            // listView1
+            // listViewIndexForm
             // 
-            listView1.LargeImageList = ImageListPet;
-            listView1.Location = new Point(38, 136);
-            listView1.Name = "listView1";
-            listView1.Size = new Size(726, 246);
-            listView1.SmallImageList = ImageListPet;
-            listView1.TabIndex = 0;
-            listView1.UseCompatibleStateImageBehavior = false;
+            listViewIndexForm.LargeImageList = ImageListPet;
+            listViewIndexForm.Location = new Point(38, 136);
+            listViewIndexForm.Name = "listViewIndexForm";
+            listViewIndexForm.Size = new Size(726, 246);
+            listViewIndexForm.SmallImageList = ImageListPet;
+            listViewIndexForm.TabIndex = 0;
+            listViewIndexForm.UseCompatibleStateImageBehavior = false;
             // 
             // ImageListPet
             // 
@@ -85,18 +81,30 @@
             ClientSize = new Size(800, 450);
             Controls.Add(AddNewPetButton);
             Controls.Add(VetClinicLabel);
-            Controls.Add(listView1);
+            Controls.Add(listViewIndexForm);
             Name = "IndexForm";
             Text = "Form1";
             ResumeLayout(false);
             PerformLayout();
         }
 
-        #endregion
 
-        private ListView listView1;
+
+        private ListView listViewIndexForm;
         private ImageList ImageListPet;
         private Label VetClinicLabel;
         private Button AddNewPetButton;
+
+
+        private void LoadAllPets()
+            {
+                this.listViewIndexForm.Clear();
+                foreach (var pet in pets)
+                {
+                    this.listViewIndexForm.Items.Add(pet.Name, pet.GetType() == typeof(Cat) ? 0 : 1);
+                }
+            }
     }
 }
+
+#endregion

@@ -28,68 +28,68 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
-            radioButton1 = new RadioButton();
-            radioButton2 = new RadioButton();
+            LabelTitle = new Label();
+            radioButtonCat = new RadioButton();
+            radioButtonDog = new RadioButton();
             NameTextBox = new TextBox();
             BreedTextBox = new TextBox();
-            dateTimePicker = new DateTimePicker();
+            BirthdayDatePicker = new DateTimePicker();
             MedHistoryTextBox = new RichTextBox();
-            label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
-            label5 = new Label();
-            label6 = new Label();
+            NameLabel = new Label();
+            BirthdayLabel = new Label();
+            BreedLable = new Label();
+            MedHisLable = new Label();
+            WeightLabel = new Label();
             WeightTextBox = new TextBox();
-            label7 = new Label();
+            ColorLable = new Label();
             ColorTextBox = new TextBox();
-            label8 = new Label();
+            ImageLabel = new Label();
             ImageTextBox = new TextBox();
-            label9 = new Label();
+            FavToyLabel = new Label();
             FavToyTextBox = new TextBox();
-            button1 = new Button();
+            AddPetButton = new Button();
             SuspendLayout();
             // 
-            // label1
+            // LabelTitle
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Yu Gothic", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.White;
-            label1.Location = new Point(264, 9);
-            label1.Name = "label1";
-            label1.Size = new Size(268, 77);
-            label1.TabIndex = 0;
-            label1.Text = "New Pet";
+            LabelTitle.AutoSize = true;
+            LabelTitle.Font = new Font("Yu Gothic", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            LabelTitle.ForeColor = Color.White;
+            LabelTitle.Location = new Point(264, 9);
+            LabelTitle.Name = "LabelTitle";
+            LabelTitle.Size = new Size(268, 77);
+            LabelTitle.TabIndex = 0;
+            LabelTitle.Text = "New Pet";
             // 
-            // radioButton1
+            // radioButtonCat
             // 
-            radioButton1.AutoSize = true;
-            radioButton1.Location = new Point(131, 131);
-            radioButton1.Name = "radioButton1";
-            radioButton1.Size = new Size(52, 24);
-            radioButton1.TabIndex = 1;
-            radioButton1.TabStop = true;
-            radioButton1.Text = "Cat";
-            radioButton1.UseVisualStyleBackColor = true;
-            radioButton1.CheckedChanged += radioButton1_CheckedChanged;
+            radioButtonCat.AutoSize = true;
+            radioButtonCat.Location = new Point(131, 131);
+            radioButtonCat.Name = "radioButtonCat";
+            radioButtonCat.Size = new Size(52, 24);
+            radioButtonCat.TabIndex = 1;
+            radioButtonCat.TabStop = true;
+            radioButtonCat.Text = "Cat";
+            radioButtonCat.UseVisualStyleBackColor = true;
+            radioButtonCat.CheckedChanged += radioButton1_CheckedChanged;
             // 
-            // radioButton2
+            // radioButtonDog
             // 
-            radioButton2.AutoSize = true;
-            radioButton2.Location = new Point(250, 131);
-            radioButton2.Name = "radioButton2";
-            radioButton2.Size = new Size(59, 24);
-            radioButton2.TabIndex = 2;
-            radioButton2.TabStop = true;
-            radioButton2.Text = "Dog";
-            radioButton2.UseVisualStyleBackColor = true;
+            radioButtonDog.AutoSize = true;
+            radioButtonDog.Location = new Point(250, 131);
+            radioButtonDog.Name = "radioButtonDog";
+            radioButtonDog.Size = new Size(59, 24);
+            radioButtonDog.TabIndex = 2;
+            radioButtonDog.TabStop = true;
+            radioButtonDog.Text = "Dog";
+            radioButtonDog.UseVisualStyleBackColor = true;
             // 
             // NameTextBox
             // 
             NameTextBox.Location = new Point(131, 179);
             NameTextBox.Name = "NameTextBox";
             NameTextBox.Size = new Size(232, 27);
-            NameTextBox.TabIndex = 3;
+            NameTextBox.TabIndex = 1;
             NameTextBox.TextChanged += textBox1_TextChanged;
             // 
             // BreedTextBox
@@ -97,148 +97,150 @@
             BreedTextBox.Location = new Point(131, 271);
             BreedTextBox.Name = "BreedTextBox";
             BreedTextBox.Size = new Size(232, 27);
-            BreedTextBox.TabIndex = 5;
+            BreedTextBox.TabIndex = 1;
             // 
-            // dateTimePicker
+            // BirthdayDatePicker
             // 
-            dateTimePicker.Location = new Point(131, 224);
-            dateTimePicker.Name = "dateTimePicker";
-            dateTimePicker.Size = new Size(232, 27);
-            dateTimePicker.TabIndex = 6;
+            BirthdayDatePicker.Location = new Point(131, 224);
+            BirthdayDatePicker.Name = "BirthdayDatePicker";
+            BirthdayDatePicker.Size = new Size(232, 27);
+            BirthdayDatePicker.TabIndex = 1;
             // 
             // MedHistoryTextBox
             // 
             MedHistoryTextBox.Location = new Point(131, 319);
             MedHistoryTextBox.Name = "MedHistoryTextBox";
             MedHistoryTextBox.Size = new Size(232, 93);
-            MedHistoryTextBox.TabIndex = 8;
+            MedHistoryTextBox.TabIndex = 1;
             MedHistoryTextBox.Text = "";
             // 
-            // label2
+            // NameLabel
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.ForeColor = Color.White;
-            label2.Location = new Point(49, 175);
-            label2.Name = "label2";
-            label2.Size = new Size(80, 31);
-            label2.TabIndex = 9;
-            label2.Text = "Name:";
+            NameLabel.AutoSize = true;
+            NameLabel.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            NameLabel.ForeColor = Color.White;
+            NameLabel.Location = new Point(49, 175);
+            NameLabel.Name = "NameLabel";
+            NameLabel.Size = new Size(80, 31);
+            NameLabel.TabIndex = 9;
+            NameLabel.Text = "Name:";
             // 
-            // label3
+            // BirthdayLabel
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.ForeColor = Color.White;
-            label3.Location = new Point(25, 220);
-            label3.Name = "label3";
-            label3.Size = new Size(104, 31);
-            label3.TabIndex = 10;
-            label3.Text = "Birthday:";
+            BirthdayLabel.AutoSize = true;
+            BirthdayLabel.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            BirthdayLabel.ForeColor = Color.White;
+            BirthdayLabel.Location = new Point(25, 220);
+            BirthdayLabel.Name = "BirthdayLabel";
+            BirthdayLabel.Size = new Size(104, 31);
+            BirthdayLabel.TabIndex = 10;
+            BirthdayLabel.Text = "Birthday:";
             // 
-            // label4
+            // BreedLable
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label4.ForeColor = Color.White;
-            label4.Location = new Point(47, 271);
-            label4.Name = "label4";
-            label4.Size = new Size(78, 31);
-            label4.TabIndex = 11;
-            label4.Text = "Breed:";
+            BreedLable.AutoSize = true;
+            BreedLable.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            BreedLable.ForeColor = Color.White;
+            BreedLable.Location = new Point(47, 271);
+            BreedLable.Name = "BreedLable";
+            BreedLable.Size = new Size(78, 31);
+            BreedLable.TabIndex = 11;
+            BreedLable.Text = "Breed:";
             // 
-            // label5
+            // MedHisLable
             // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label5.ForeColor = Color.White;
-            label5.Location = new Point(-2, 318);
-            label5.Name = "label5";
-            label5.Size = new Size(131, 23);
-            label5.TabIndex = 12;
-            label5.Text = "Medical History:";
+            MedHisLable.AutoSize = true;
+            MedHisLable.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            MedHisLable.ForeColor = Color.White;
+            MedHisLable.Location = new Point(-2, 318);
+            MedHisLable.Name = "MedHisLable";
+            MedHisLable.Size = new Size(131, 23);
+            MedHisLable.TabIndex = 12;
+            MedHisLable.Text = "Medical History:";
             // 
-            // label6
+            // WeightLabel
             // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label6.ForeColor = Color.White;
-            label6.Location = new Point(392, 177);
-            label6.Name = "label6";
-            label6.Size = new Size(92, 31);
-            label6.TabIndex = 14;
-            label6.Text = "Weight:";
-            label6.Click += label6_Click;
+            WeightLabel.AutoSize = true;
+            WeightLabel.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            WeightLabel.ForeColor = Color.White;
+            WeightLabel.Location = new Point(392, 177);
+            WeightLabel.Name = "WeightLabel";
+            WeightLabel.Size = new Size(92, 31);
+            WeightLabel.TabIndex = 14;
+            WeightLabel.Text = "Weight:";
+            WeightLabel.Click += label6_Click;
             // 
             // WeightTextBox
             // 
             WeightTextBox.Location = new Point(483, 181);
             WeightTextBox.Name = "WeightTextBox";
             WeightTextBox.Size = new Size(232, 27);
-            WeightTextBox.TabIndex = 13;
+            WeightTextBox.TabIndex = 1;
             // 
-            // label7
+            // ColorLable
             // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label7.ForeColor = Color.White;
-            label7.Location = new Point(401, 220);
-            label7.Name = "label7";
-            label7.Size = new Size(73, 31);
-            label7.TabIndex = 16;
-            label7.Text = "Color:";
+            ColorLable.AutoSize = true;
+            ColorLable.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            ColorLable.ForeColor = Color.White;
+            ColorLable.Location = new Point(401, 220);
+            ColorLable.Name = "ColorLable";
+            ColorLable.Size = new Size(73, 31);
+            ColorLable.TabIndex = 16;
+            ColorLable.Text = "Color:";
             // 
             // ColorTextBox
             // 
             ColorTextBox.Location = new Point(483, 224);
             ColorTextBox.Name = "ColorTextBox";
             ColorTextBox.Size = new Size(232, 27);
-            ColorTextBox.TabIndex = 15;
+            ColorTextBox.TabIndex = 1;
             // 
-            // label8
+            // ImageLabel
             // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label8.ForeColor = Color.White;
-            label8.Location = new Point(401, 267);
-            label8.Name = "label8";
-            label8.Size = new Size(83, 31);
-            label8.TabIndex = 18;
-            label8.Text = "Image:";
+            ImageLabel.AutoSize = true;
+            ImageLabel.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            ImageLabel.ForeColor = Color.White;
+            ImageLabel.Location = new Point(401, 267);
+            ImageLabel.Name = "ImageLabel";
+            ImageLabel.Size = new Size(83, 31);
+            ImageLabel.TabIndex = 18;
+            ImageLabel.Text = "Image:";
             // 
             // ImageTextBox
             // 
             ImageTextBox.Location = new Point(483, 271);
             ImageTextBox.Name = "ImageTextBox";
             ImageTextBox.Size = new Size(232, 27);
-            ImageTextBox.TabIndex = 17;
+            ImageTextBox.TabIndex = 1;
             // 
-            // label9
+            // FavToyLabel
             // 
-            label9.AutoSize = true;
-            label9.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label9.ForeColor = Color.White;
-            label9.Location = new Point(385, 318);
-            label9.Name = "label9";
-            label9.Size = new Size(99, 20);
-            label9.TabIndex = 20;
-            label9.Text = "Favourite Toy:";
+            FavToyLabel.AutoSize = true;
+            FavToyLabel.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            FavToyLabel.ForeColor = Color.White;
+            FavToyLabel.Location = new Point(385, 318);
+            FavToyLabel.Name = "FavToyLabel";
+            FavToyLabel.Size = new Size(99, 20);
+            FavToyLabel.TabIndex = 20;
+            FavToyLabel.Text = "Favourite Toy:";
             // 
             // FavToyTextBox
             // 
             FavToyTextBox.Location = new Point(483, 315);
             FavToyTextBox.Name = "FavToyTextBox";
             FavToyTextBox.Size = new Size(232, 27);
-            FavToyTextBox.TabIndex = 19;
+            FavToyTextBox.TabIndex = 1;
             // 
-            // button1
+            // AddPetButton
             // 
-            button1.Location = new Point(551, 374);
-            button1.Name = "button1";
-            button1.Size = new Size(124, 64);
-            button1.TabIndex = 21;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
+            AddPetButton.BackColor = Color.DarkSlateBlue;
+            AddPetButton.ForeColor = Color.White;
+            AddPetButton.Location = new Point(551, 374);
+            AddPetButton.Name = "AddPetButton";
+            AddPetButton.Size = new Size(124, 64);
+            AddPetButton.TabIndex = 1;
+            AddPetButton.Text = "Add Pet";
+            AddPetButton.UseVisualStyleBackColor = false;
             // 
             // NewPet
             // 
@@ -246,26 +248,26 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LightGreen;
             ClientSize = new Size(832, 450);
-            Controls.Add(button1);
-            Controls.Add(label9);
+            Controls.Add(AddPetButton);
+            Controls.Add(FavToyLabel);
             Controls.Add(FavToyTextBox);
-            Controls.Add(label8);
+            Controls.Add(ImageLabel);
             Controls.Add(ImageTextBox);
-            Controls.Add(label7);
+            Controls.Add(ColorLable);
             Controls.Add(ColorTextBox);
-            Controls.Add(label6);
+            Controls.Add(WeightLabel);
             Controls.Add(WeightTextBox);
-            Controls.Add(label5);
-            Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(label2);
+            Controls.Add(MedHisLable);
+            Controls.Add(BreedLable);
+            Controls.Add(BirthdayLabel);
+            Controls.Add(NameLabel);
             Controls.Add(MedHistoryTextBox);
-            Controls.Add(dateTimePicker);
+            Controls.Add(BirthdayDatePicker);
             Controls.Add(BreedTextBox);
             Controls.Add(NameTextBox);
-            Controls.Add(radioButton2);
-            Controls.Add(radioButton1);
-            Controls.Add(label1);
+            Controls.Add(radioButtonDog);
+            Controls.Add(radioButtonCat);
+            Controls.Add(LabelTitle);
             Name = "NewPet";
             Text = "NewPet";
             Load += NewPet_Load;
@@ -275,25 +277,25 @@
 
         #endregion
 
-        private Label label1;
-        private RadioButton radioButton1;
-        private RadioButton radioButton2;
+        private Label LabelTitle;
+        private RadioButton radioButtonCat;
+        private RadioButton radioButtonDog;
         private TextBox NameTextBox;
         private TextBox BreedTextBox;
-        private DateTimePicker dateTimePicker;
+        private DateTimePicker BirthdayDatePicker;
         private RichTextBox MedHistoryTextBox;
-        private Label label2;
-        private Label label3;
-        private Label label4;
-        private Label label5;
-        private Label label6;
+        private Label NameLabel;
+        private Label BirthdayLabel;
+        private Label BreedLable;
+        private Label MedHisLable;
+        private Label WeightLabel;
         private TextBox WeightTextBox;
-        private Label label7;
+        private Label ColorLable;
         private TextBox ColorTextBox;
-        private Label label8;
+        private Label ImageLabel;
         private TextBox ImageTextBox;
-        private Label label9;
+        private Label FavToyLabel;
         private TextBox FavToyTextBox;
-        private Button button1;
+        private Button AddPetButton;
     }
 }
