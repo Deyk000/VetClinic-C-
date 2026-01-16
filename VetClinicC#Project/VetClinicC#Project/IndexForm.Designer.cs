@@ -106,7 +106,37 @@ namespace VetClinicC_Project
                 this.listViewIndexForm.Items.Add(pet.Name, pet is Cat ? 0 : 1);
                 }
         }
-    }
+
+        private void ListViewPetsMouseClick(object sender, MouseEventArgs E)
+        {
+            IAnimal selectedPet = pets[listViewIndexForm.SelectedItems[0].Index];
+
+           if(selectedPet != null)
+            {
+                using PetDetails detailsForm = new (selectedPet);
+                detailsForm.ShowDialog();
+            }
+        }
+        private void listViewIndexForm_MouseClick(object sender, MouseEventArgs e)
+        {
+            IAnimal selectedPet = pets[listViewIndexForm.SelectedItems[0].Index];
+            if (selectedPet != null)
+            {
+                using PetDetails petDetails = new (selectedPet);
+                petDetails.ShowDialog();
+            }
+        }
+        private void ButtonAddMewPetClick(object sender, EventArgs e)
+        {
+            using (NewPet newPetForm = new())
+            {
+                if (newPetForm.ShowDialog() == DialogResult.OK)
+                {
+                   
+                }
+            }
+
+        }
 }
 
 #endregion

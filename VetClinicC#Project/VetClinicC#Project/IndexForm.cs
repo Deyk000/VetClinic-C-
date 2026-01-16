@@ -13,7 +13,7 @@ namespace VetClinicC_Project
 
         private void OnLoad(object sender, EventArgs e)
         {
-            //LoadAllPets();
+            LoadAllPets();
         }
 
         public IndexForm()

@@ -12,9 +12,16 @@ namespace VetClinicC_Project
 {
     public partial class PetDetails : Form
     {
-        public PetDetails()
+        private IAnimal pet;
+
+        public PetDetails(IAnimal selectedPet)
         {
             InitializeComponent();
+            pet = selectedPet;
+           
         }
+
+        
     }
+
 }
