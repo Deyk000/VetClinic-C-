@@ -1,4 +1,5 @@
-﻿using static VetClinicC_Project.IAnimal;
+csharp VetClinicC#Project\IndexForm.Designer.cs
+using static VetClinicC_Project.IAnimal;
 
 namespace VetClinicC_Project
 {
@@ -74,6 +75,8 @@ namespace VetClinicC_Project
             AddNewPetButton.TabIndex = 2;
             AddNewPetButton.Text = "Add New Pet";
             AddNewPetButton.UseVisualStyleBackColor = false;
+            // wire click handler
+            AddNewPetButton.Click += ButtonAddNewPetClick;
             // 
             // IndexForm
             // 
@@ -133,6 +136,7 @@ namespace VetClinicC_Project
                 if (newPetForm.ShowDialog() == DialogResult.OK)
                 {
                     
+                    pets.Add(newPetForm.NewAnimal);
                 }
             }
 
